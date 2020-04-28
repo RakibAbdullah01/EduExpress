@@ -26,7 +26,8 @@
 
 	<!-- Vendor CSS -->
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="vendor/font-awesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome/css/all.css">
 	<link rel="stylesheet" href="vendor/animate/animate.min.css">
 	<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
 	<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
@@ -108,9 +109,11 @@
 														About
 													</a>
 													<ul class="dropdown-menu">
-														<li><a class="dropdown-item" href="about.html">About EduExpress</a></li>
+														<li><a class="dropdown-item" href="about.html">About
+																EduExpress</a></li>
 														<li><a class="dropdown-item" href="faq.html">FaQ</a></li>
-														<li><a class="dropdown-item" href="contact.html">Contact with EduExpress</a></li>
+														<li><a class="dropdown-item" href="contact.html">Contact with
+																EduExpress</a></li>
 													</ul>
 												</li>
 											</ul>
@@ -140,182 +143,240 @@
 	</header>
 
 
-
+	<!--Body Strt-->
 	<div role="main" class="main">
-		<section class="page-header page-header-modern page-header-background page-header-background-pattern page-header-background-sm overlay overlay-color-dark overlay-show overlay-op-5" style="background-image: url(img/patterns/wild_oliva.png);">
+		<div role="main" class="main">
+
+			<section
+				class="page-header page-header-modern page-header-background page-header-background-pattern page-header-background-sm overlay overlay-color-dark overlay-show overlay-op-5"
+				style="background-image: url(img/patterns/wild_oliva.png);">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 align-self-center p-static order-2 text-center">
+							<h1>Contact with <strong>EduExpress</strong></h1>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12 align-self-center p-static order-2 text-center">
-						<h1>Contact with <strong><span class="alternative-font">EduExpress</span></strong></h1>
+
+				<div class="row py-4">
+					<div class="col-lg-6">
+
+						<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
+							<h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
+							<ul class="list list-icons list-icons-style-2 mt-2">
+								<li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark"></strong> 3rd
+									Floor,House no-24
+									Green Road,Dhaka-1205
+									Bangladesh.</li>
+								<li><i class="fas fa-phone top-6"></i> +86 1785-1977372(China),+880 1816585926(BD)</li>
+								<li><i class="fas fa-envelope top-6"></i> <strong class="text-dark"></strong> <a
+										href="mailto:eduexpress@126.com">eduexpress@126.com</a></li>
+							</ul>
+						</div>
+
+						<h4>Meet our Partners Company in your Country</h4>
+						<div class="row">
+							<div class="col-lg-10 mb-4 mb-lg-0">
+								<div class="accordion accordion-primary" id="accordion2Primary">
+									<div class="card card-default">
+										<div class="card-header">
+											<h4 class="card-title m-0">
+												<a class="accordion-toggle" data-toggle="collapse"
+													data-parent="#accordion2Primary" href="#collapse2PrimaryOne">
+													China
+												</a>
+											</h4>
+										</div>
+										<div id="collapse2PrimaryOne" class="collapse show">
+											<div class="card-body">
+												<p class="mb-0">
+													河北省唐山市丰南区翔云家园102.1.1801世合留学咨询有限公司电话13722522232</p>
+											</div>
+										</div>
+									</div>
+									<div class="card card-default">
+										<div class="card-header">
+											<h4 class="card-title m-0">
+												<a class="accordion-toggle" data-toggle="collapse"
+													data-parent="#accordion2Primary" href="#collapse2PrimaryTwo">
+													South Korea
+												</a>
+											</h4>
+										</div>
+										<div id="collapse2PrimaryTwo" class="collapse">
+											<div class="card-body">
+												<p class="mb-0">충청북도 음성군 한성 진주 음성읍. 전화 번호:010-7900-7583</p>
+											</div>
+										</div>
+									</div>
+									<div class="card card-default">
+										<div class="card-header">
+											<h4 class="card-title m-0">
+												<a class="accordion-toggle" data-toggle="collapse"
+													data-parent="#accordion2Primary" href="#collapse2PrimaryThree">
+													Nigeria
+												</a>
+											</h4>
+										</div>
+										<div id="collapse2PrimaryThree" class="collapse">
+											<div class="card-body">
+												<p class="mb-0">House 4, behind Calvary Baptist church gaa kanbi, City: ilorin ,kwara state, Nigeria
+													Phone:+2348100856086</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					
+					<div class="col-lg-6">
+						<div class="overflow-hidden mb-4 pb-3">
+							<p class="mb-0 appear-animation" data-appear-animation="maskUp"
+								data-appear-animation-delay="400">Feel free to ask for details, don't save any
+								questions!</p>
+						</div>
+
+						<form id="contactForm" class="contact-form" action="php/contact-form.php" method="POST">
+							<div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess">
+								<strong>Success!</strong> Your message has been sent to us.
+							</div>
+
+							<div class="contact-form-error alert alert-danger d-none mt-4" id="contactError">
+								<strong>Error!</strong> There was an error sending your message.
+								<span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-lg-6">
+									<label class="required font-weight-bold text-dark text-2">Full Name</label>
+									<input type="text" value="" data-msg-required="Please enter your name."
+										maxlength="100" class="form-control" name="name" id="name" required>
+								</div>
+								<div class="form-group col-lg-6">
+									<label class="required font-weight-bold text-dark text-2">Email Address</label>
+									<input type="email" value="" data-msg-required="Please enter your email address."
+										data-msg-email="Please enter a valid email address." maxlength="100"
+										class="form-control" name="email" id="email" required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col">
+									<label class="font-weight-bold text-dark text-2">Subject</label>
+									<input type="text" value="" data-msg-required="Please enter the subject."
+										maxlength="100" class="form-control" name="subject" id="subject" required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col">
+									<label class="required font-weight-bold text-dark text-2">Message</label>
+									<textarea maxlength="5000" data-msg-required="Please enter your message." rows="8"
+										class="form-control" name="message" id="message" required></textarea>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col">
+									<input type="submit" value="Send Message" class="btn btn-primary btn-modern"
+										data-loading-text="Loading...">
+								</div>
+							</div>
+						</form>
+
+					</div>
+
+
 				</div>
-			</div>
-		</section>
-
-		<div class="container">
-
-			<div class="row py-4">
-				<div class="col-lg-6">
-
-					<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
-						<h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
-						<ul class="list list-icons list-icons-style-2 mt-2">
-							<li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark"></strong> Yangzhou,China</li>
-							<li><i class="fas fa-phone top-6"></i> +86 1785-1977372</li>
-							<li><i class="fas fa-envelope top-6"></i> <strong class="text-dark"></strong> <a href="info@eduexpress.info">info@eduexpress.info</a></li>
-						</ul>
-					</div>
-
-					<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
-						<h4 class="pt-5">24/7 <strong>Services</strong></h4>
-						<ul class="list list-icons list-dark mt-2">
-							<p >For any kinds of information,Just knock us, we will try to answer all enquirers instantly.</p>
-						</ul>
-					</div>
-
-					<h4 class="pt-5">Stay with<strong> US</strong></h4>
-					<p >Are you looking for a Scholarship in china ? Want to study in Top universities in China ? Want to fulfill your Dream ? Want to study in your Dream Subject ? <span class="alternative-font">EduExpress</span> is ready to help you.</p>
-					<p><strong>Just stay with Us...</strong></p>
-
-				</div>
-				<div class="col-lg-6">
-					<div class="overflow-hidden mb-4 pb-3">
-						<p class="mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">Feel free to ask for details, don't save any questions!</p>
-					</div>
-
-					<form id="contactForm" class="contact-form" action="php/contact-form.php" method="POST">
-						<div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess">
-							<strong>Success!</strong> Your message has been sent to us.
-						</div>
-					
-						<div class="contact-form-error alert alert-danger d-none mt-4" id="contactError">
-							<strong>Error!</strong> There was an error sending your message.
-							<span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span>
-						</div>
-						
-						<div class="form-row">
-							<div class="form-group col-lg-6">
-								<label class="required font-weight-bold text-dark text-2">Full Name</label>
-								<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
-							</div>
-							<div class="form-group col-lg-6">
-								<label class="required font-weight-bold text-dark text-2">Email Address</label>
-								<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="form-group col">
-								<label class="font-weight-bold text-dark text-2">Subject</label>
-								<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="form-group col">
-								<label class="required font-weight-bold text-dark text-2">Message</label>
-								<textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control" name="message" id="message" required></textarea>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="form-group col">
-								<input type="submit" value="Send Message" class="btn btn-primary btn-modern" data-loading-text="Loading...">
-							</div>
-						</div>
-					</form>
-
-				</div>
-				
 
 			</div>
 
 		</div>
 
-	</div>
-	
-	
-	
-	
-	
 
-	<!-- Footer Start -->
-	<footer id="footer" class="color color-primary">
-		<div class="container">
-			<div class="row">
-				<div class="footer-ribbon">
-					<span>Get in Touch</span>
-				</div>
-				<div class="col-lg-3">
-					<div class="newsletter">
-						<h4>ABOUT US</h4>
-						<p class="pr-1"><span> EduExpress has proven to be very successful in matching
-								students to the University that is tailored to each and every student’s passion,
-								ambition. Get your dream Campus applying through EduExpress.</span></p>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<h4>USEFULL LINKS</h4>
-					<ul>
-						<li><a href="agent.html">Work with EduExpress</a></li>
-						<li><a href="scholarships.html">Scholarships</a></li>
-						<li><a href="universities.html">Universities</a></li>
-						<li><a href="faq.html">FAQ's</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-4">
-					<div class="contact-details">
-						<h4>Contact Us</h4>
-						<ul class="contact">
-							<li>
-								<p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 1234 Street Name,
-									City Name, United States</p>
-							</li>
-							<li>
-								<p><i class="fas fa-phone"></i> <strong>Phone:</strong> (123) 456-789</p>
-							</li>
-							<li>
-								<p><i class="far fa-envelope"></i> <strong>Email:</strong> <a
-										href="mailto:mail@example.com">mail@example.com</a></p>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2">
-					<h4>Follow Us</h4>
-					<ul class="social-icons">
-						<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
-								title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-						<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
-								title="Twitter"><i class="fab fa-twitter"></i></a></li>
-						<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank"
-								title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
+
+
+
+
+		<!-- Footer Start -->
+		<footer id="footer" class="color color-primary">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-1">
-						<a href="index.html" class="logo">
-							<img alt="Porto Website Template" class="img-fluid" src="img/logo-footer.png">
-						</a>
+					<div class="footer-ribbon">
+						<span>Get in Touch</span>
 					</div>
-					<div class="col-lg-7">
-						<p>© Copyright 2018. All Rights Reserved.</p>
+					<div class="col-lg-3">
+						<div class="newsletter">
+							<h4>ABOUT US</h4>
+							<p class="pr-1"><span> EduExpress has proven to be very successful in matching
+									students to the University that is tailored to each and every student’s passion,
+									ambition. Get your dream Campus applying through EduExpress.</span></p>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<h4>USEFULL LINKS</h4>
+						<ul>
+							<li><a href="agent.html">Work with EduExpress</a></li>
+							<li><a href="scholarships.html">Scholarships</a></li>
+							<li><a href="universities.html">Universities</a></li>
+							<li><a href="faq.html">FAQ's</a></li>
+						</ul>
 					</div>
 					<div class="col-lg-4">
-						<nav id="sub-menu">
-							<ul>
-								<li><a href="page-faq.html">FAQ's</a></li>
-								<li><a href="sitemap.html">Sitemap</a></li>
-								<li><a href="contact-us.html">Contact</a></li>
+						<div class="contact-details">
+							<h4>Contact Us</h4>
+							<ul class="contact">
+								<li>
+									<p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 1234 Street Name,
+										City Name, United States</p>
+								</li>
+								<li>
+									<p><i class="fas fa-phone"></i> <strong>Phone:</strong> (123) 456-789</p>
+								</li>
+								<li>
+									<p><i class="far fa-envelope"></i> <strong>Email:</strong> <a
+											href="mailto:mail@example.com">mail@example.com</a></p>
+								</li>
 							</ul>
-						</nav>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<h4>Follow Us</h4>
+						<ul class="social-icons">
+							<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
+									title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank"
+									title="Twitter"><i class="fab fa-twitter"></i></a></li>
+							<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank"
+									title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-1">
+							<a href="index.html" class="logo">
+								<img alt="Porto Website Template" class="img-fluid" src="img/logo-footer.png">
+							</a>
+						</div>
+						<div class="col-lg-7">
+							<p>© Copyright 2018. All Rights Reserved.</p>
+						</div>
+						<div class="col-lg-4">
+							<nav id="sub-menu">
+								<ul>
+									<li><a href="page-faq.html">FAQ's</a></li>
+									<li><a href="sitemap.html">Sitemap</a></li>
+									<li><a href="contact-us.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 	<!-- Footer End -->
 
